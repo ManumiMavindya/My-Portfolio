@@ -1,0 +1,334 @@
+body {
+    padding: 150px;
+    background: linear-gradient(180deg, #0a0f1f 14.42%, #26015a 91.83%);
+    overflow-x: hidden;
+}
+/*<!--==================================Header=================================================-->*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(17, 24, 39, 1);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    height: 12%;
+
+}
+.logo{
+    padding: 150px;
+    margin: 0;
+}
+.logoM1{
+    color: rgba(0, 240, 255, 1);
+    font-family: "Irish Grover", system-ui;
+    font-size: 35px;
+}
+.logoM2{
+    color: rgba(59, 255, 20, 1);
+    font-family: "Irish Grover", system-ui;
+    font-size: 35px;
+}
+.naviBar a{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+.naviBar{
+    padding-right: 130px;
+}
+.naviBar a:hover{
+    color: rgba(0, 240, 255, 1);
+    font-size: 20px;
+    /*text-decoration: underline rgba(0, 240, 255, 1) ;*/
+}
+#contact1{
+    display: inline-block;
+    background-color: rgba(0, 240, 255, 1);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*<!--==================================Hero Page=================================================-->*/
+
+#home{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.helloIm{
+    font-family: "Outfit", sans-serif;
+    color: white;
+    font-size: 70px;
+    background: linear-gradient(90deg, #00ffff, #ff00ff, #00ff88);
+    background-size: 200%;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 4s infinite linear;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+.devloper{
+    color: rgba(0, 240, 255, 1);
+    font-family: "Outfit", sans-serif;
+    padding-top: 10px;
+    font-size: 40px;
+    margin: 0;
+}
+#exploreBtn{
+    background-color:rgba(30, 15, 79, 1);
+    color:  rgba(59, 255, 20, 1);
+    box-shadow: 0 0 5px rgba(0, 240, 255, 0.8);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    border-color:  rgba(59, 255, 20, 1);
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+#exploreBtn:hover{
+    background-color:  rgba(59, 255, 20, 1);
+    color: black;
+}
+.icons i{
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+
+}
+.icons i:hover{
+    color: rgba(0, 240, 255, 1);
+    font-size: 40px;
+    animation-delay: 100ms;
+}
+/*<!--==================================About Page=================================================-->*/
+
+#about{
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutMe{
+    text-align: center;
+    padding-bottom: 100px;
+    color: rgba(0, 240, 255, 1);
+    position: relative;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+/*.aboutMe::after{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    left: 45%;*/
+/*    bottom: 0;*/
+/*    top: 35%;*/
+/*    width: 10%;*/
+/*    height: 3px;*/
+/*    background: rgba(59, 255, 20, 1);*/
+/*    border-radius: 2px;*/
+
+/*}*/
+.aboutContent{
+    display: flex;
+}
+.aboutText{
+    padding-left: 100px;
+}
+.getToKnowMe{
+    color: rgba(145, 135, 135, 1);
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    text-decoration: underline;
+    position: relative;
+}
+/*.getToKnowMe::after{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    !*left: 45%;*!*/
+/*    !*bottom: 0;*!*/
+/*    !*top: 35%;*!*/
+/*    width: 10%;*/
+/*    height: 3px;*/
+/*    background: rgba(59, 255, 20, 1);*/
+/*    border-radius: 2px;*/
+
+/*}*/
+.aboutText{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    /*font-family: "Gruppo", sans-serif;*/
+    /*font-weight: 300;*/
+    /*font-style: normal;*/
+    color: white;
+    font-size: 20px;
+}
+#downloadCv{
+    background-color:#26015a;
+    color:  rgba(59, 255, 20, 1);
+    box-shadow: 0 0 5px rgba(0, 240, 255, 0.8);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    border-color:  rgba(59, 255, 20, 1);
+    border-radius: 25px;
+}
+#downloadCv:hover{
+    background-color:  rgba(59, 255, 20, 1);
+    color: black;
+}
+.aboutPic1{
+    border-radius: 60px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.aboutPic1:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+/*<!--==================================services Page=================================================-->*/
+
+#services{
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.Services{
+    text-align: center;
+    padding-bottom: 100px;
+    color: rgba(0, 240, 255, 1);
+    position: relative;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.servicesContent{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.servicesContent > div{
+    height: 300px;
+    width: 500px;
+    background-color: rgba(10, 15, 31, 1);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+.ui-uxCard{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ui-uxCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0, 240, 255, 0.8);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+}
+.ui-uxCard > h3{
+    font-family: "Lusitana", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    background: linear-gradient(90deg, #26015A 10%, #1B4B8D 31%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ui-uxCard > p{
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: left;
+    color: #8D9093;
+}
+.developmentCard{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.developmentCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0, 240, 255, 0.8);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+}
+.developmentCard > h3{
+    font-family: "Lusitana", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    background: linear-gradient(90deg, #26015A 10%, #1B4B8D 31%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.developmentCard > p{
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: left;
+    color: #8D9093;
+}
+.gameCard{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.gameCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0, 240, 255, 0.8);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+}
+.gameCard > h3{
+    font-family: "Lusitana", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    background: linear-gradient(90deg, #26015A 10%, #1B4B8D 31%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gameCard > p{
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: left;
+    color: #8D9093;
+}
+
+
+
+
+
+
