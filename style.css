@@ -327,6 +327,43 @@ header{
     color: #8D9093;
 }
 
+/*<!--==================================skills Page=================================================-->*/
+
+#Skills{
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills{
+    text-align: center;
+    padding-bottom: 100px;
+    color: rgba(0, 240, 255, 1);
+    position: relative;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.loop{
+    text-align: center;
+    position: relative;
+}
+/*@keyframes scrollleft {*/
+/*    to{*/
+/*        left: 0;*/
+/*    }*/
+/*}*/
+/*.item{*/
+/*    position: absolute;*/
+/*    right:0;*/
+/*    animation-name: scrollleft;*/
+/*    animation-duration: 3000ms;*/
+/*    animation-timing-function: linear;*/
+/*    animation-iteration-count: infinite;*/
+/*}*/
+
+/*<!--==================================skills Page=================================================-->*/
+
 
 
 
