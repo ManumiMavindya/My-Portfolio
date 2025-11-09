@@ -167,28 +167,20 @@ header{
     font-size: 30px;
     font-family: "Playfair Display", serif;
     font-weight: normal;
-    text-decoration: underline;
-    position: relative;
+    margin-bottom: 10px;
 }
-/*.getToKnowMe::after{*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    !*left: 45%;*!*/
-/*    !*bottom: 0;*!*/
-/*    !*top: 35%;*!*/
-/*    width: 10%;*/
-/*    height: 3px;*/
-/*    background: rgba(59, 255, 20, 1);*/
-/*    border-radius: 2px;*/
+.divider{
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 240, 255, 1);
+    margin-bottom: 40px;
 
-/*}*/
+}
+
 .aboutText{
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
-    /*font-family: "Gruppo", sans-serif;*/
-    /*font-weight: 300;*/
-    /*font-style: normal;*/
     color: white;
     font-size: 20px;
 }
@@ -342,6 +334,7 @@ header{
 
 /*<!--==================================skills Page=================================================-->*/
 
+
 #Skills{
     padding-top: 100px;
     justify-content: space-between;
@@ -357,23 +350,24 @@ header{
     font-weight: 800;
     font-style: normal;
 }
-.loop{
-    text-align: center;
-    position: relative;
+.loopContainer{
+    width: 100%;
+    overflow: hidden;
 }
-/*@keyframes scrollleft {*/
-/*    to{*/
-/*        left: 0;*/
-/*    }*/
-/*}*/
-/*.item{*/
-/*    position: absolute;*/
-/*    right:0;*/
-/*    animation-name: scrollleft;*/
-/*    animation-duration: 3000ms;*/
-/*    animation-timing-function: linear;*/
-/*    animation-iteration-count: infinite;*/
-/*}*/
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.loop {
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    animation: scroll 10s linear infinite;
+}
+.loop img {
+    object-fit: contain;
+    flex-shrink: 0;
+}
 
 /*<!--==================================Projects Page=================================================-->*/
 
