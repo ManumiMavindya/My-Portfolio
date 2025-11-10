@@ -166,7 +166,7 @@
                         <h3>Daycare Management System </h3>
                         <p>An all-in-one daycare management system that handles student registration, staff management, meal plans, and attendance tracking, built with JavaFX and MySQL</p>
                         <div class="btns">
-                            <button class="playBtn"><i class="fa-solid fa-play"></i> Watch Demo </button>
+                            <button class="playBtn" onclick="openModal('https://www.youtube.com/watch?v=C5AKwJf3fEg')"><i class="fa-solid fa-play"></i> Watch Demo </button>
                             <a href="https://github.com/ManumiMavindya/my-first-mvc-project-" target="_blank">
                                 <button class="viewCode"><i class="fa-solid fa-laptop-code"></i> View Code </button>
                             </a>
@@ -205,6 +205,15 @@
             </div>
         </section>
 
+        <!-- Video Modal -->
+        <div id="videoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;">
+            <div style="position:relative; width:80%; max-width:800px;">
+                <span onclick="closeModal()" style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+                <iframe id="modalVideo" width="100%" height="450" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
         <!--==================================Assignments Page=================================================-->
 
         <section id="Assignments">
@@ -221,7 +230,7 @@
                     <div class="assignmentContent">
                         <h3>Assignment 01</h3>
                         <div class="btn">
-                            <button class="playBtn"><i class="fa-solid fa-play"></i> Watch Demo </button>
+                            <button class="playBtn" onclick="openModal('https://www.youtube.com/watch?v=OCzX1XqlTr8')"><i class="fa-solid fa-play"></i> Watch Demo </button>
                             <a href="https://github.com/ManumiMavindya/CSS-Assignments/blob/master/Excercise/Case01.html" target="_blank">
                                 <button class="viewCode"><i class="fa-solid fa-laptop-code"></i> View Code </button>
                             </a>
@@ -237,7 +246,7 @@
                     <div class="assignmentContent">
                         <h3>Assignment 02</h3>
                         <div class="btn">
-                            <button class="playBtn"><i class="fa-solid fa-play"></i> Watch Demo </button>
+                            <button class="playBtn"  onclick="openModal('https://www.youtube.com/watch?v=J0gzOsdQOgo')"><i class="fa-solid fa-play"></i> Watch Demo </button>
                             <a href="https://github.com/ManumiMavindya/CSS-Assignments/blob/master/Excercise/Case02.html" target="_blank">
                                 <button class="viewCode"><i class="fa-solid fa-laptop-code"></i> View Code </button>
                             </a>
@@ -252,7 +261,7 @@
                 <div class="assignmentContent">
                     <h3>Assignment 03</h3>
                     <div class="btn">
-                        <button class="playBtn"><i class="fa-solid fa-play"></i> Watch Demo </button>
+                        <button class="playBtn" onclick="openModal('https://www.youtube.com/watch?v=nCH-Nxl5lnA')"><i class="fa-solid fa-play"></i> Watch Demo </button>
                         <a href="https://github.com/ManumiMavindya/CSS-Assignments/blob/master/Excercise/Case03.html" target="_blank">
                             <button class="viewCode"><i class="fa-solid fa-laptop-code"></i> View Code </button>
                         </a>
@@ -262,6 +271,15 @@
             </div>
 
         </section>
+
+        <!-- Video Modal1 -->
+        <div id="videoModal1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;">
+            <div style="position:relative; width:80%; max-width:800px;">
+                <span onclick="closeModal()" style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+                <iframe id="modalVideo1" width="100%" height="450" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
 
         <!--==================================Contact Page=================================================-->
 
