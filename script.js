@@ -9,3 +9,12 @@ document.querySelector('.Manumi Mavindya CV').addEventListener('click', () => {
 // })
 
 
+function openModal(videoURL) {
+    document.getElementById('modalVideo').src = videoURL.replace("watch?v=", "embed/") + "?autoplay=1";
+    document.getElementById('videoModal').style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById('modalVideo').src = "";
+    document.getElementById('videoModal').style.display = "none";
+}
