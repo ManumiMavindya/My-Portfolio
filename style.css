@@ -57,6 +57,7 @@ header{
     text-decoration: none;
     font-weight: bold;
 }
+
 /*<!--==================================Hero Page=================================================-->*/
 
 #home{
@@ -126,6 +127,63 @@ header{
     color: rgba(0, 240, 255, 1);
     font-size: 40px;
     animation-delay: 100ms;
+}
+
+/* ================= MOBILE SCREENS (max-width: 480px) ================= */
+@media (max-width: 480px) {
+
+    #home {
+        padding-top: 80px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .helloIm {
+        font-size: 32px;
+        line-height: 38px;
+        word-break: break-word;
+    }
+
+    .devloper {
+        font-size: 20px;
+    }
+
+    #exploreBtn {
+        padding: 8px 30px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .icons i {
+        font-size: 22px;
+        padding: 5px;
+    }
+
+    .icons i:hover {
+        font-size: 24px;
+    }
+}
+
+/* ================= TABLETS (max-width: 992px) ================= */
+@media (max-width: 992px) {
+
+    #home {
+        padding-top: 100px;
+    }
+
+    .helloIm {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .devloper {
+        font-size: 26px;
+    }
+
+    #exploreBtn {
+        padding: 10px 35px;
+        font-size: 16px;
+    }
 }
 /*<!--==================================About Page=================================================-->*/
 
@@ -217,12 +275,70 @@ header{
     transform: scale(1.05);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
+/* ===================== TABLETS (max-width: 992px) ===================== */
+@media (max-width: 992px) {
+
+    .aboutContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .aboutPic1 {
+        width: 300px;
+    }
+
+    .aboutText {
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .getToKnowMe {
+        font-size: 26px;
+    }
+
+    .aboutPara {
+        font-size: 16px;
+        padding: 0 30px;
+    }
+
+    #downloadCv {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+}
+
+/* ===================== MOBILE (max-width: 480px) ===================== */
+@media (max-width: 480px) {
+
+    .aboutMe {
+        font-size: 32px;
+        padding-bottom: 50px;
+    }
+
+    .aboutPic1 {
+        width: 260px;
+        border-radius: 40px;
+    }
+
+    .getToKnowMe {
+        font-size: 22px;
+    }
+
+    .aboutPara {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+}
+
+
 /*<!--==================================services Page=================================================-->*/
 
 #services{
     padding-top: 100px;
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
 }
 .Services{
     text-align: center;
@@ -238,6 +354,7 @@ header{
     display: flex;
     justify-content: space-between;
     gap: 60px;
+
 }
 .servicesContent > div{
     height: 300px;
@@ -247,8 +364,7 @@ header{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.5s ease, box-shadow 0.3s ease;
     padding: 30px;
-    position: relative;
-    z-index: 2;
+    text-align: center;
 }
 .ui-uxCard{
     align-items: center;
@@ -332,6 +448,63 @@ header{
     color: #8D9093;
 }
 
+/* =================  TABLETS (max-width: 992px) ================= */
+@media (max-width: 992px) {
+
+    .servicesContent {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .servicesContent > div {
+        width: 70%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .servicesContent img {
+        width: 180px;
+    }
+
+    .servicesContent p {
+        font-size: 18px;
+    }
+
+    .servicesContent h3 {
+        font-size: 22px;
+    }
+}
+
+/* ================= MOBILE (max-width: 480px) ================= */
+@media (max-width: 480px) {
+
+    .servicesContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .servicesContent > div {
+        width: 95%;
+        padding: 18px;
+    }
+
+    .servicesContent img {
+        width: 130px;
+    }
+
+    .servicesContent h3 {
+        font-size: 20px;
+    }
+
+    .servicesContent p {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
 /*<!--==================================skills Page=================================================-->*/
 
 
@@ -368,7 +541,40 @@ header{
     object-fit: contain;
     flex-shrink: 0;
 }
+/* =================  TABLETS (max-width: 992px) ================= */
+@media (max-width: 992px) {
 
+    .skills {
+        font-size: 34px;
+        padding-bottom: 60px;
+    }
+
+    .loop {
+        gap: 30px;
+    }
+
+    .loop img {
+        width: 70px;
+        height: 70px;
+    }
+}
+/* ================= MOBILE (max-width: 480px) ================= */
+@media (max-width: 480px) {
+
+    .skills {
+        font-size: 26px;
+    }
+
+    .loop {
+        gap: 20px;
+        animation-duration: 14s; /* slower for small screens */
+    }
+
+    .loop img {
+        width: 45px;
+        height: 45px;
+    }
+}
 /*<!--==================================Projects Page=================================================-->*/
 
 #projects{
@@ -474,7 +680,113 @@ header{
     box-shadow: 0 0 8px rgba(0, 240, 255, 0.8);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+    position: relative;
+    margin: 5% auto;
+    padding: 0;
+    width: 80%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
 
+/* ================= LARGE TABLETS (max-width: 992px) ================= */
+@media (max-width: 992px) {
+
+    .projects {
+        font-size: 34px;
+        padding-bottom: 60px;
+    }
+
+    .projectsArea {
+        gap: 40px;
+    }
+
+    .projectsArea > div {
+        width: 320px;
+    }
+
+    .projectsArea .Pic img {
+        height: 150px;
+    }
+
+    .projectContent h3 {
+        font-size: 18px;
+    }
+
+    .projectContent p {
+        font-size: 15px;
+    }
+}
+/* ================= MOBILE (max-width: 480px) ================= */
+@media (max-width: 480px) {
+
+    .projects {
+        font-size: 26px;
+        padding-bottom: 40px;
+    }
+
+    .projectsArea > div {
+        width: 95%;
+    }
+
+    .projectsArea .Pic img {
+        height: 150px;
+    }
+
+    .projectContent h3 {
+        font-size: 16px;
+    }
+
+    .projectContent p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    /* Stack buttons vertically */
+    .projectContent .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectContent .playBtn,
+    .projectContent .viewCode {
+        width: 100%;
+        font-size: 14px;
+        margin: 4px 0;
+    }
+
+    /* Modal on phone */
+    .modal-content {
+        width: 95%;
+    }
+
+    .modal-content iframe {
+        height: 220px;
+    }
+}
 /*<!--==================================Assignment Page=================================================-->*/
 
 #Assignments{
@@ -572,7 +884,63 @@ header{
     box-shadow: 0 0 8px rgba(0, 240, 255, 0.8);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+/* ================= TABLETS (max-width: 992px) ================= */
+@media (max-width: 992px) {
 
+    .assignments {
+        font-size: 34px;
+        padding-bottom: 60px;
+    }
+
+    .assignmentArea {
+        gap: 40px;
+    }
+
+    .assignmentArea > div {
+        width: 320px;
+    }
+
+    .assignmentArea .pic img {
+        height: 150px;
+    }
+
+    .assignmentContent h3 {
+        font-size: 18px;
+    }
+}
+
+/* ================= MOBILE (max-width: 480px) ================= */
+@media (max-width: 480px) {
+
+    .assignments {
+        font-size: 26px;
+        padding-bottom: 40px;
+    }
+
+    .assignmentArea > div {
+        width: 95%;
+    }
+
+    .assignmentArea .pic img {
+        height: 150px;
+    }
+
+    .assignmentContent h3 {
+        font-size: 16px;
+    }
+
+    .assignmentContent .btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assignmentContent .playBtn,
+    .assignmentContent .viewCode {
+        width: 100%;
+        font-size: 14px;
+        margin: 4px 0;
+    }
+}
 /*<!--==================================Contact Me=================================================-->*/
 
 #contact {
@@ -650,6 +1018,60 @@ header{
 #sendBtn:active {
     transform: translateY(0);
     box-shadow: none;
+}
+
+/* =============== TABLETS (max-width: 992px) =============== */
+@media (max-width: 992px) {
+
+    .contact {
+        font-size: 34px;
+        padding-bottom: 50px;
+    }
+
+    .contactForm {
+        max-width: 450px;
+    }
+
+    .contactForm input,
+    .contactForm textarea {
+        font-size: 16px;
+    }
+}
+
+/* =============== MOBILE (max-width: 480px) =============== */
+@media (max-width: 480px) {
+
+    #contact {
+        padding-top: 70px;
+    }
+
+    .contact {
+        font-size: 26px;
+        padding-bottom: 30px;
+    }
+
+    .contactForm {
+        width: 95%;
+        gap: 15px;
+    }
+
+    .contactForm input,
+    .contactForm textarea {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    #sendBtn {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    /* Make textarea height better for mobile */
+    #msg {
+        min-height: 120px;
+    }
 }
 
 /*<!--==================================Footer=================================================-->*/
