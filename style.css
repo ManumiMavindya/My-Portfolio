@@ -128,6 +128,16 @@ header{
     font-size: 40px;
     animation-delay: 100ms;
 }
+.profilePic1{
+    border-radius: 60px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+
+}
+.profilePic1:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
 
 /* ================= MOBILE SCREENS (max-width: 480px) ================= */
 @media (max-width: 480px) {
